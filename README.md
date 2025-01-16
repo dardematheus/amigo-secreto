@@ -39,4 +39,4 @@ Este é um projeto simples de Amigo Secreto, onde os usuários podem adicionar n
 
 ## Autor
 
-Projeto desenvolvido por [Seu Nome].
+Projeto desenvolvido por Matheus Darde em parceria com o curso Hello One.
