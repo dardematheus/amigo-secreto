@@ -2,12 +2,15 @@
 let listaAmigos = [];
 const list = document.getElementById('listaAmigos');
 const sorteado = document.getElementById('resultado');
+const buttonSortear = document.getElementById('button-sortear');
 
 function adicionarAmigo(){
     let amigo = document.getElementById('amigo').value;
     listaAmigos.push(amigo);
     document.getElementById('amigo').value = '';
     
+    buttonSortear.removeAttribute('disabled');
+
     list.innerHTML += `<li>${amigo}</li>`;
 }
 
@@ -18,6 +21,12 @@ function sortearAmigo(){
     list.innerHTML = '';
     sorteado.innerHTML = `Amigo sorteado : ${amigoSorteado}`;
 
+    buttonSortear.setAttribute('disabled', '');
     console.log(`amigo sorteado : ${amigoSorteado} ${numero}`);
-    
+}
+
+function restartGame(){
+    listaAmigos.splice(0, listaAmigos.length);
+    list.innerHTML = '';
+    sorteado.innerHTML = '';
 }

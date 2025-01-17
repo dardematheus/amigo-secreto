@@ -89,7 +89,9 @@ body {
 
 .button-container {
     width: 300px;
-    justify-content: center;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
 }
 
 /* Estilos de entrada de texto */
@@ -110,7 +112,7 @@ button {
     font-family: "Inter", sans-serif;
     font-size: 16px;
     border: 2px solid #000;
-    border-radius: 25px;
+    border-radius: 17px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     cursor: pointer;
 }
@@ -146,6 +148,7 @@ ul {
 .button-draw {
     display: flex;
     align-items: center;
+    justify-content: space-around;
     width: 100%;
     padding: 10px 40px;
     color: var(--color-white);
@@ -159,4 +162,10 @@ ul {
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+}
+
+#button-restart {
+    padding: 15px 70px;
+    order: -1;
+
 }
