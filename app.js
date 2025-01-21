@@ -3,6 +3,7 @@ let listaAmigos = [];
 const list = document.getElementById('listaAmigos');
 const sorteado = document.getElementById('resultado');
 const buttonSortear = document.getElementById('button-sortear');
+const buttonReiniciar = document.getElementById('button-restart');
 
 function adicionarAmigo(){
     let amigo = document.getElementById('amigo').value;
@@ -10,6 +11,7 @@ function adicionarAmigo(){
     document.getElementById('amigo').value = '';
     
     buttonSortear.removeAttribute('disabled');
+    buttonReiniciar.removeAttribute('disabled');
 
     list.innerHTML += `<li>${amigo}</li>`;
 }
@@ -29,4 +31,7 @@ function restartGame(){
     listaAmigos.splice(0, listaAmigos.length);
     list.innerHTML = '';
     sorteado.innerHTML = '';
+    
+    buttonSortear.setAttribute('disabled', '');
+    buttonReiniciar.setAttribute('disabled', '');
 }

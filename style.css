@@ -1,9 +1,9 @@
 :root {
-    --color-primary: #4B69FD;
-    --color-secondary: #FFF9EB;
+    --color-primary: #91DDf2;
+    --color-secondary: #FAD4E3;
     --color-tertiary: #C4C4C4;
-    --color-button: #fe652b;
-    --color-button-hover: #e55720;
+    --color-button: #91DDf2;
+    --color-button-hover: #7ABACC;
     --color-text: #444444;
     --color-white: #FFFFFF;
 }
@@ -138,7 +138,7 @@ ul {
 
 .result-list {
     margin-top: 15px;
-    color: #05DF05;
+    color: #444444;
     font-size: 22px;
     font-weight: bold;
     text-align: center;
@@ -164,8 +164,16 @@ ul {
     background-color: var(--color-button-hover);
 }
 
+#button-sortear[disabled] { 
+    background-color: #444444;
+}
+
 #button-restart {
     padding: 15px 70px;
     order: -1;
 
+}
+
+#button-restart[disabled] {
+    background-color: #444444;
 }
